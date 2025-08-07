@@ -70,7 +70,6 @@ Este projeto seguiu um pipeline estruturado de análise e modelagem de dados par
     *   A importância das features para o modelo Random Forest foi extraída e visualizada usando um barplot.
     *   Os coeficientes das features para o modelo de Regressão Logística (treinado com SMOTE) foram extraídos e visualizados para entender a direção e magnitude do impacto de cada feature.
     *   SHAP (SHapley Additive exPlanations) foi utilizado para fornecer interpretabilidade local e global do modelo Random Forest, visualizando o impacto de cada feature nas previsões individuais e no modelo como um todo através de um summary plot.
-"""
 
 # Resumo das principais descobertas
 
@@ -85,7 +84,6 @@ Os fatores mais influentes na evasão de clientes incluem:
 - Serviços de Segurança e Suporte (TechSupport, OnlineSecurity, OnlineBackup): A adesão a esses serviços está associada a uma menor probabilidade de evasão.
 - Método de Pagamento (Electronic check e Mailed check): Cheque Eletrônico demonstrou aumentar a probabilidade de churn, enquanto Cheque Enviado parece estar associado a uma menor probabilidade.
 - Contas Diárias (contas_diarias): A frequência e o valor dos encargos impactam a decisão de evasão.
-"""
 
 # Resumo do desempenho dos modelos
 
@@ -107,7 +105,6 @@ Foram avaliados modelos de Regressão Logística e Random Forest com diferentes 
 *Nota: O F1 Test (Churn) e o AUC Test foram calculados no conjunto de teste não balanceado.*
 
 Os resultados indicam que as estratégias de balanceamento melhoraram o desempenho na validação cruzada no treino. Ao avaliar no conjunto de teste, o F1-score para a classe de churn variou, com a Regressão Logística (Original e RandomUnderSampler) e o Random Forest (SMOTEENN) apresentando os melhores resultados para esta métrica. O AUC foi relativamente consistente entre as estratégias de balanceamento para cada modelo.
-"""
 
 # Esboço da Estrutura do Projeto
 
@@ -119,4 +116,3 @@ O repositório contém os seguintes arquivos principais:
 -   `telecomX_dados_tratados.csv`: O conjunto de dados utilizado para a análise e treinamento dos modelos.
 -   `previsoes_churn.csv`: Arquivo CSV contendo as previsões de churn (real, predito e probabilidade) para o conjunto de teste.
 -   `modelo_random_forest.pkl`: Arquivo pickle contendo o modelo final de Random Forest treinado, pronto para ser carregado e utilizado para novas previsões.
-"""
